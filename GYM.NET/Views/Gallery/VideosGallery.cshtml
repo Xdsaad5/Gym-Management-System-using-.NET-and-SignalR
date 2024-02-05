@@ -1,0 +1,147 @@
+﻿@model List<TrainerVideo>
+<main>
+
+    <!--? Hero Start -->
+    <div class="slider-area2">
+        <div class="slider-height2 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap hero-cap2 pt-70">
+                            <h2>Our tutorials</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero End -->
+    <!--? Gallery Area Start -->
+    <div class="gallery-area">
+        <div class="container-fluid ">
+            <div class="row">
+                @{
+                    Console.WriteLine("ggggggggggggggggggggggggggggggggggggggrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
+
+                    foreach (TrainerVideo trainervideo in @Model)
+                    {
+                        Console.WriteLine($"{ trainervideo.VideoUrl.ToString()}");
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="box snake mb-30">
+                                <div class="gallery-img big-img" style="background-image: url(/assets/img/gallery/gallery1.png);"></div>
+                                
+                                        <h3>Muscle gaining </h3><br/>
+                                         
+                                                  <video width="320" height="240" controls>
+                                                                                        <source src=$"{trainervideo.VideoUrl.ToString()}" type="video/mp4">.
+                                                                                                
+                                                                </video>
+                                    
+                            </div>
+                        </div>
+                    }
+                }
+               
+                @*<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img big-img" style="background-image: url(/assets/img/gallery/gallery2.png);"></div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Muscle gaining </h3>
+                                <a href="/Gallery/Gallery"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img big-img" style="background-image: url(/assets/img/gallery/gallery3.png);"></div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Muscle gaining </h3>
+                                <a href="/Gallery/Gallery"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img big-img" style="background-image: url(/assets/img/gallery/gallery4.png);"></div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Muscle gaining </h3>
+                                <a href="/Gallery/Gallery"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img big-img" style="background-image: url(/assets/img/gallery/gallery5.png);"></div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Muscle gaining </h3>
+                                <a href="/Gallery/Gallery"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img big-img" style="background-image: url(/assets/img/gallery/gallery6.png);"></div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Muscle gaining </h3>
+                                <a href="/Gallery/Gallery"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+    <!-- Gallery Area End -->
+    <!-- ? services-area -->
+    <section class="services-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-services mb-40">
+                        <div class="features-icon">
+                            <img src="~/assets/img/icon/icon1.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <h3>Location</h3>
+                            <p>You’ll look at graphs and charts in Task One, how to approach </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-services mb-40">
+                        <div class="features-icon">
+                            <img src="~/assets/img/icon/icon2.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <h3>Phone</h3>
+                            <p>(90) 277 278 2566</p>
+                            <p>  (78) 267 256 2578</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-services mb-40">
+                        <div class="features-icon">
+                            <img src="~/assets/img/icon/icon3.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <h3>Email</h3>
+                            <p>jacson767@gmail.com</p>
+                            <p>contact56@zacsion.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

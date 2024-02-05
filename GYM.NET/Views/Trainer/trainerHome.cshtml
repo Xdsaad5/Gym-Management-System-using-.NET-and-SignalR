@@ -1,0 +1,81 @@
+﻿@using GYM.NET.Models;
+@model string;
+<main>
+    <!--? slider Area Start-->
+    <div class="slider-area position-relative">
+        <div class="slider-active">
+            <!-- Single Slider -->
+            <div class="single-slider slider-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-10">
+                            <div class="hero__caption">
+                                <span data-animation="fadeInLeft" data-delay="0.1s">Build Yourself With Saad:</span>
+                                <h1 data-animation="fadeInLeft" data-delay="0.4s" id="text">@Model</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="service-sec background-image" id="services">
+
+        <div class="row">
+            <div class="card" style="background:rgb(70,1,25);">
+                <i class="fa-solid fa-compass-drafting"></i>
+                <h4 style="color:white">Trainer</h4>
+                <a href="/Trainer/Image" style="color: darkred">Upload Image</a>
+            </div>
+            <div class="card" style="background:#d09f61;">
+                <i class="fa-solid fa-person-running"></i>
+                <h4 style="color:white">Trainer</h4>
+                <a href="/Trainer/Video" style="color: darkred">Upload Video</a>
+            </div>
+            <div class="card" style="background-color: #9d370c;">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h4 style="color:white">Trainer</h4>
+                <a href="/Home/trainerLogin" style="color: darkred">Message Box</a>
+            </div>
+            <div class="card" style="background:rgb(177, 53, 53);">
+                <i class="fa-solid fa-headset"></i>
+                <h3 style="color:white">
+                    Trainer</h3>
+                    <a href="/Trainer/Logout" style="color: darkred">Logout</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- video_start -->
+    <div class="video-area section-bg2 d-flex align-items-center" data-background="/assets/img/gallery/video-bg.png">
+        <div class="container">
+            <div class="video-wrap position-relative">
+                <div class="video-icon">
+                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video_end -->
+    <!-- ? services-area -->
+    <script>
+        console.log("Saad");
+        const text = document.getElementById('text');
+        const prog = "Build Up yourself with";
+        var x = '@Model';
+        var y = '@Model';
+        const prog1 = x;
+        let idx = 1;
+        setInterval(write, 150);
+        console.log(y);
+        console.log(x);
+        function write() {
+            text.innerText = prog1.slice(0, idx);
+            idx++;
+            if (idx > prog.length) {
+                idx = 1;
+            }
+        }
+    </script>
+</main>
+
